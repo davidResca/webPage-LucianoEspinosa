@@ -1,0 +1,130 @@
+.footer{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    .marquee-container {
+        margin-bottom: 2rem;
+
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .marquee-img-section{
+            height: 65px;
+            width: 65%;
+        }
+        .marquee-subtitle-container {
+            padding: .5rem;
+            position: absolute;
+            top: .5rem;
+            .marquee-title {
+                font-family:'Oswald', sans-serif;
+                font-size: 2.5rem;
+                font-weight: 400;
+
+                line-height: 1.8rem;
+                letter-spacing: .5px;
+                text-transform: uppercase;
+                
+                color: white;
+            }
+        }
+    }
+    .contact-rrss-icons{
+        font-size: 3rem;
+        text-decoration: none;
+        .rrss-ico{
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: space-evenly;
+            a{
+                color: white;
+                .fa-whatsapp {
+                    &:hover {
+                        color:#25D366;
+                    }
+                }
+                .fa-bandcamp {
+                    &:hover {
+                        color: #629aa9;
+                    }
+                }
+                .fa-instagram{
+                    &:hover{
+                        color: #E1306C;
+                    }
+                }
+                .fa-envelope{
+                    &:hover {
+                        color: #F4B400;
+                    }
+                }
+            }
+        }
+        .footer-spotify{
+            padding: 1rem;
+            margin: 2rem 0;
+            gap: .2rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .spoti-link {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                color: white;
+                &:hover{
+                    color: greenyellow;
+                }
+                i{
+                    font-size: 2rem;
+                    padding: 1rem;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    color: white;
+                    text-transform: capitalize;
+                    font-family: 'Oswald', sans-serif;
+                }
+            }
+        }
+    }
+    .btn-goup{
+        align-self: center;
+        margin-bottom: 3rem;
+        img {
+            width: 100px;
+        }
+    }
+    .dev-sign{
+        padding: .3rem;
+        width: 100%;
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 200;
+        font-size: 1rem;
+        
+        color: white;
+        background-color: rgba(0, 0, 0, 0.342);
+        a{
+            text-decoration: none;
+            color: white;
+            .fa-linkedin-in{
+                color: #0077B5;
+            }
+            .fa-whatsapp{
+                color:#25D366;
+            }
+        }
+    }
+}
