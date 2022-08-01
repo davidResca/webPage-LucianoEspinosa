@@ -97,8 +97,10 @@
             padding-bottom: 2.5px;
             color: white;
             cursor: pointer;
-            &:hover{
-                color:red;
+        }
+        .fa-whatsapp {
+            &:hover {
+                color:#25D366;
             }
         }
     }

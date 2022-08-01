@@ -190,8 +190,8 @@ body {
   color: white;
   cursor: pointer;
 }
-.nav .header-btn-container .nav-btn-toggler:hover {
-  color: red;
+.nav .header-btn-container .fa-whatsapp:hover {
+  color: #25D366;
 }
 .nav .nav-collapsible-open {
   transform: translateX(0);
