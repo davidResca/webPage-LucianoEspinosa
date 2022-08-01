@@ -427,6 +427,7 @@ body {
   color: rgba(250, 248, 248, 0.4431372549);
   cursor: pointer;
 }
+<<<<<<< HEAD
 .nav .header-btn-container .nav-btn-toggler:hover {
   color: #faf8f8;
 }
@@ -485,6 +486,10 @@ body {
 }
 .nav-collapsible-close .nav-links li a:hover {
   color: red;
+=======
+.nav .header-btn-container .fa-whatsapp:hover {
+  color: #25D366;
+>>>>>>> 9e7956e (add mobile view complete)
 }
 .nav-collapsible-close .dev-sign {
   align-self: flex-end;
