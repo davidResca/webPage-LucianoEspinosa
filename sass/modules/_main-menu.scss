@@ -31,6 +31,29 @@
                 line-height: 1rem;
             }
         }
+        .marquee-title-container-pages {
+            position: absolute;
+            top: 2px;
+            left: .5rem;
+
+            font-family:'Oswald', sans-serif;
+            
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            
+            color: white;
+            .marquee-title{
+                font-weight: 500;
+                font-size: 3rem;
+                line-height: 2.5rem;
+            }
+            .marquee-subtitle{
+                font-weight: 500;
+                font-size: 1rem;
+                text-align: justify;
+                letter-spacing: .2rem;
+            }
+        }
     }
     .main-img{
         margin-top: 3rem;

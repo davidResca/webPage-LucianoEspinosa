@@ -35,6 +35,17 @@
                 
                 color: white;
             }
+            .marquee-subtitle {
+                font-family:'Oswald', sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+
+                line-height: 1.8rem;
+                letter-spacing: .5px;
+                text-transform: uppercase;
+                
+                color: white;
+            }
         }
     }
     .description-text-container{
@@ -53,7 +64,7 @@
 
             font-family: 'Martel', serif;
             font-weight: 600;
-            font-size: 1.3rem;
+            font-size: 1rem;
             span{ 
                 margin: .5rem 0;
                 line-height: 1.5rem;
@@ -167,7 +178,7 @@
             
             font-family: 'Martel', serif;
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1rem;
             
             line-height: 1.8rem;
         }

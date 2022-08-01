@@ -35,12 +35,13 @@
         }
     }
     .contact-rrss-icons{
-        font-size: 3rem;
+        font-size: 2rem;
         text-decoration: none;
         .rrss-ico{
             margin-top: 1.5rem;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
+            gap: 2rem;
             a{
                 color: white;
                 .fa-whatsapp {

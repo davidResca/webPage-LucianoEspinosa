@@ -54,6 +54,26 @@ body {
   font-weight: 500;
   line-height: 1rem;
 }
+.main-menu .marquee-container .marquee-title-container-pages {
+  position: absolute;
+  top: 2px;
+  left: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: white;
+}
+.main-menu .marquee-container .marquee-title-container-pages .marquee-title {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
+.main-menu .marquee-container .marquee-title-container-pages .marquee-subtitle {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: justify;
+  letter-spacing: 0.2rem;
+}
 .main-menu .main-img {
   margin-top: 3rem;
   width: 250px;
@@ -229,6 +249,15 @@ body {
   text-transform: uppercase;
   color: white;
 }
+.section-container .marquee-container .marquee-subtitle-container .marquee-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: white;
+}
 .section-container .description-text-container {
   width: 360px;
   padding: 1rem 1.5rem;
@@ -243,7 +272,7 @@ body {
   gap: 1rem;
   font-family: "Martel", serif;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .section-container .description-text-container .text-paragraph span {
   margin: 0.5rem 0;
@@ -337,7 +366,7 @@ body {
   gap: 1rem;
   font-family: "Martel", serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.8rem;
 }
 .section-container .press-container {
@@ -392,6 +421,90 @@ body {
     color: rgb(222, 195, 233);
   }
 }
+.pages-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.3rem;
+  margin-bottom: 3rem;
+}
+.pages-main .marquee-container {
+  position: relative;
+  margin: 1rem 0;
+}
+.pages-main .marquee-container .marquee-img {
+  width: 65%;
+}
+.pages-main .marquee-container .marquee-title-container {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: white;
+}
+.pages-main .marquee-container .marquee-title-container .marquee-title {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
+.pages-main .marquee-container .marquee-title-container .marquee-subtitle {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: justify;
+  letter-spacing: 0.2rem;
+}
+.pages-main .marquee-container .title-doscaras {
+  top: 0.2rem !important;
+}
+.pages-main .description-text-container {
+  width: 360px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.pages-main .description-text-container .text-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  font-family: "Martel", serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.pages-main .description-text-container .text-paragraph p {
+  margin: 0.5rem 0;
+  line-height: 1.5rem;
+}
+.pages-main .description-text-container .text-paragraph .semillero-reggae-text-bio {
+  display: flex;
+  flex-direction: column;
+}
+.pages-main .description-text-container .text-paragraph .semillero-reggae-text-bio .semillero-reggae-text-bio-title {
+  color: white;
+}
+.pages-main .description-text-container .rrss-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.pages-main .description-text-container .rrss-icons a {
+  color: white;
+  font-size: 2rem;
+}
+.pages-main .description-text-container .rrss-icons a .fa-spotify:hover {
+  color: #25D366;
+}
+.pages-main .description-text-container .rrss-icons a .fa-instagram:hover {
+  color: #E1306C;
+}
+.pages-main .description-text-container .rrss-icons a .fa-youtube:hover {
+  color: #FF0000;
+}
+
 .footer {
   overflow: hidden;
   position: relative;
@@ -426,13 +539,14 @@ body {
   color: white;
 }
 .footer .contact-rrss-icons {
-  font-size: 3rem;
+  font-size: 2rem;
   text-decoration: none;
 }
 .footer .contact-rrss-icons .rrss-ico {
   margin-top: 1.5rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
 }
 .footer .contact-rrss-icons .rrss-ico a {
   color: white;
