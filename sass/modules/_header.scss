@@ -1,21 +1,111 @@
 .nav {
-    padding: .5rem;
-    
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     position: relative;
+    @media only screen and (min-width: 1224px){
+        display:none;
+    }
+    .bg-lines-top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        width: 400px;
+        opacity: 1;
+    }
+    .header-title{
+        z-index: 0;
+
+        width: 350px;
+
+        line-height: 3rem;
+
+        font-family: 'Oswald', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 500;
+        
+        text-transform: uppercase;
+        text-decoration: none;
+        
+        color:white;
+        transform: skewY(0);
+        transition: .2s ease-in-out;
+        &:hover {
+            transform: scale(1.015) skew(-1deg);
+            background: url("https://media2.giphy.com/media/3o7bu9zwfieCd1R9HG/200w.webp?cid=ecf05e47lc1ym2v383dmw8pezn9b59sf6mpeyn3eu1qgbv7l&rid=200w.webp&ct=g");
+            background-size: cover;
+            background-position: center;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: #31085747;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        @media only screen and (min-width:1224px){
+            font-size: 6rem;
+            line-height: 5rem;
+        }
+    }
+    .header-btn-container{
+        z-index: 10;
+        
+        width: 8.5rem;
+        height: 80px;
+        
+        position: fixed;
+    
+        margin-top: 0.2rem;
+        padding: 1rem;
+        
+        right: 0;
+    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        font-size: 2.5rem;
+        gap: 1rem;    
+
+        transition: .2s ease-out;
+        @media only screen and (min-width: 1224px){
+            display: none;
+        }
+        .header-wsp-ico{
+            color:#faf8f8;
+            &:hover{
+                color: #25D366;
+            }
+        }
+        .nav-btn-toggler{
+            padding-bottom: 2.5px;
+            color:#faf8f871;
+            cursor: pointer;
+            &:hover{
+                color: #faf8f8;
+            }
+            @media only screen and (min-width: 1224px){
+                display: none;
+            }
+        }
+    }
     .nav-collapsible-close {
         position: fixed;
         
         padding: 1rem;
-        padding-top: 8rem;
+        padding-top: 5rem;
         
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         z-index: 9;
-    
-        height: 100vh;
-        width: 100vw;
+        
+        height: 100%;
+        width: 100%;
         
         top: 0;
         left: 0;
@@ -29,11 +119,11 @@
         color:white;
         background-color: rgba(255, 255, 255, 0);
         .line{
-            margin-top: .6rem;
+            margin: .3rem 0;
             color:white;
         }
         .nav-links{
-            margin-top: .2rem;
+            margin-top: 2rem;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -42,6 +132,9 @@
             line-height: 1.8rem;
             li{
                 margin: 1.2rem 0;
+                @media (orientation: landscape) {
+                    margin: .6rem 0;
+                }
                 a{ 
                     cursor: pointer;
                     text-decoration: none;
@@ -53,73 +146,47 @@
                 }
             }
         }
+        .dev-sign{
+            align-self: flex-end;
+            justify-self: end;
+            padding: .3rem;
+            width: 100%;
+            
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 200;
+            font-size: 1.5rem;
+            
+            color: white;
+            background-color: rgba(0, 0, 0, 0.342);
+            a{
+                text-decoration: none;
+                color: white;
+                .fa-linkedin-in{
+                    color: #0077B5;
+                }
+                .fa-whatsapp{
+                    color:#25D366;
+                }
+            }
+        }
     } 
-    .header-title{
-        z-index: 10;
-        margin-top: 1rem;
-        font-family: 'Oswald', sans-serif;
-        font-size: 3.2em;
-        font-weight: 500;
-        
-        line-height: 2.8rem;
-        text-transform: uppercase;
-        text-decoration: none;
-        
-        color:white;
-        transform: skewY(0);
-        transition: .5s ease-in;
-    }
-    .header-btn-container{
-        z-index: 10;
-        position: fixed;
-    
-        margin-top: 1rem;
-        padding: 1rem;
-        
-        right: 0;
-    
-        width: 8.5rem;
-        height: 80px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: 2.5rem;
-        gap: 1rem;    
-        
-        transition: .2s ease-out;
-        .header-wsp-ico{
-            color: white;
-            &:hover{
-                color: red;
-            }
-        }
-        .nav-btn-toggler{
-            padding-bottom: 2.5px;
-            color: white;
-            cursor: pointer;
-        }
-        .fa-whatsapp {
-            &:hover {
-                color:#25D366;
-            }
-        }
-    }
     /* CLASES DINAMICAS TOGGLE */
-    .nav-collapsible-open{   
+    .nav-collapsible-open{
         transform: translateX(0);
         transition: transform .3s ease-in-out, backdrop-filter .5s ease-in .1s, background-color .5s ease-in .1s;
         backdrop-filter: blur(4px);
-        background-color: rgba(0, 0, 0, .60);
-    }
-    .header-title-dark{
-        transform: skewY(3deg);
-        color:rgba(255, 255, 255, 0.644);
-        transition: .5s ease-in .1s;
-        filter: blur(4px);
+        background: url("https://media2.giphy.com/media/3o7bu9zwfieCd1R9HG/200w.webp?cid=ecf05e47lc1ym2v383dmw8pezn9b59sf6mpeyn3eu1qgbv7l&rid=200w.webp&ct=g");
+        background-size: cover;
+        opacity: .95;
     }
     .header-btn-container-open {
+        margin-top: 0;
         font-size: 3rem;
-        width: 100vw;
+        width: 100%;
         justify-content: space-evenly;
         transition: .2s ease-in;
     }
