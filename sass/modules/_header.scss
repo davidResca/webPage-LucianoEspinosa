@@ -92,103 +92,108 @@
             }
         }
     }
-    .nav-collapsible-close {
-        position: fixed;
-        
-        padding: 1rem;
-        padding-top: 5rem;
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
-        z-index: 9;
-        
-        height: 100%;
-        width: 100%;
-        
-        top: 0;
-        left: 0;
-        
-        font-family: 'Oswald', sans-serif;
-        font-size: 2rem;
-        
-        transform: translateX(-100vw);
-        transition: .35s ease-in-out;
-        
-        color:white;
-        background-color: rgba(255, 255, 255, 0);
-        .line{
-            margin: .3rem 0;
-            color:white;
-        }
-        .nav-links{
-            margin-top: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-    
-            list-style-type: none;
-            line-height: 1.8rem;
-            li{
-                margin: 1.2rem 0;
-                @media (orientation: landscape) {
-                    margin: .6rem 0;
-                }
-                a{ 
-                    cursor: pointer;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    color: white;
-                    &:hover {
-                        color: red;
-                    }
-                }
-            }
-        }
-        .dev-sign{
-            align-self: flex-end;
-            justify-self: end;
-            padding: .3rem;
-            width: 100%;
-            
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            
-            font-family: 'Roboto Mono', monospace;
-            font-weight: 200;
-            font-size: 1.5rem;
-            
-            color: white;
-            background-color: rgba(0, 0, 0, 0.342);
-            a{
-                text-decoration: none;
-                color: white;
-                .fa-linkedin-in{
-                    color: #0077B5;
-                }
-                .fa-whatsapp{
-                    color:#25D366;
-                }
-            }
-        }
-    } 
-    /* CLASES DINAMICAS TOGGLE */
-    .nav-collapsible-open{
-        transform: translateX(0);
-        transition: transform .3s ease-in-out, backdrop-filter .5s ease-in .1s, background-color .5s ease-in .1s;
-        backdrop-filter: blur(4px);
-        background: url("https://media2.giphy.com/media/3o7bu9zwfieCd1R9HG/200w.webp?cid=ecf05e47lc1ym2v383dmw8pezn9b59sf6mpeyn3eu1qgbv7l&rid=200w.webp&ct=g");
-        background-size: cover;
-        opacity: .95;
-    }
-    .header-btn-container-open {
-        margin-top: 0;
-        font-size: 3rem;
-        width: 100%;
-        justify-content: space-evenly;
-        transition: .2s ease-in;
-    }
 }
 
+
+/*  MENU DE NAVEGACION COLAPSABLE VISTA => MOVIL  */
+
+.nav-collapsible-close {
+    position: fixed;
+    
+    padding: 1rem;
+    padding-top: 5rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    z-index: 9;
+    
+    height: 100%;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+    
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    
+    transform: translateX(-100vw);
+    transition: .35s ease-in-out;
+    
+    color:white;
+    background-color: rgba(255, 255, 255, 0);
+    .line{
+        margin: .2rem 0;
+        opacity: .1;
+        color:white;
+    }
+    .nav-links{
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        list-style-type: none;
+        line-height: 1.4rem;
+        li{
+            margin: .6rem 0;
+            @media (orientation: landscape) {
+                margin: .6rem 0;
+            }
+            a{ 
+                cursor: pointer;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+    .dev-sign{
+        align-self: flex-end;
+        justify-self: end;
+        padding: .3rem;
+        width: 100%;
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 200;
+        font-size: 1.5rem;
+        
+        color: white;
+        background-color: rgba(0, 0, 0, 0.342);
+        a{
+            text-decoration: none;
+            color: white;
+            .fa-linkedin-in{
+                color: #0077B5;
+            }
+            .fa-whatsapp{
+                color:#25D366;
+            }
+        }
+    }
+} 
+/* CLASES DINAMICAS TOGGLE */
+.nav-collapsible-open{
+    transform: translateX(0);
+    transition: transform .3s ease-in-out, backdrop-filter .5s ease-in .1s, background-color .5s ease-in .1s;
+    backdrop-filter: blur(4px);
+    background: url("https://media2.giphy.com/media/3o7bu9zwfieCd1R9HG/200w.webp?cid=ecf05e47lc1ym2v383dmw8pezn9b59sf6mpeyn3eu1qgbv7l&rid=200w.webp&ct=g");
+    background-size: cover;
+    opacity: .95;
+}
+.header-btn-container-open {
+    margin-top: 0;
+    font-size: 3rem;
+    width: 100%;
+    justify-content: space-evenly;
+    transition: .2s ease-in;
+}
