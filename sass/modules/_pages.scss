@@ -442,10 +442,20 @@
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
-    a{
-        color: white;
+    .rrss-title{
+        align-self: center;
         font-size: 2rem;
+        font-family: 'Oswald', sans-serif;
+        @media only screen and (min-width:1224px){
+            font-size: 3rem;
+        }
+    }
+    a{
+        margin-top: .5rem;
+        color: white;
+        font-size: 3rem;
         .fa-spotify {
             color: #25D366;
 
@@ -459,6 +469,9 @@
         }
         .fa-youtube{
             color: #FF0000;
+        }
+        .fa-facebook{
+            color: #4267B2;
         }
     }
 }
@@ -485,9 +498,14 @@
     align-content: space-evenly;
     justify-content: space-evenly;
     gap:1rem;
-    img{
-        height: 600px;
-        object-fit: cover;
+    a{
+        img{
+            width: 100%;
+        }
+        transition: .2s;
+        &:hover{
+            transform: scale(1.02);
+        }
     }
 }
 

@@ -49,7 +49,9 @@
             padding: 1rem;
             font-size: 3rem;
             text-orientation: upright;
-            writing-mode: sideways-lr;
+            writing-mode: horizontal-tb;
+            transform: rotateX(90deg);
+            transform-origin: 0;
         }
     }
     .contact-title::after{
