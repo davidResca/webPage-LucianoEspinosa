@@ -69,7 +69,7 @@
         }
     }
     .chevron-down{
-        animation: scaling 1s infinite; 
+        transition: .5s ease; 
     }
     .main-title{
         @media only screen and (min-width:1224px){
@@ -116,6 +116,8 @@
         .chevron-up{
             z-index: 9;
             height: 20px;
+            width: 100%;
+            transition: .5s ease;
         }
         .bio-main{
             width: 100%;
@@ -174,9 +176,11 @@
     animation: blurImg 3s infinite;
     filter: blur(.5px);
 }
-
-
 .translate-bio-up{
     transform: translateY(0)!important;
     background-color: black!important;
+}
+
+.rotate-chevron{
+    transform: rotate(.5turn);
 }

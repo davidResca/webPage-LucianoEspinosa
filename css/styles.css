@@ -111,7 +111,7 @@ body {
   color: white;
 }
 .main .chevron-down {
-  animation: scaling 1s infinite;
+  transition: 0.5s ease;
 }
 @media only screen and (min-width: 1224px) {
   .main .main-title {
@@ -158,6 +158,8 @@ body {
 .main .bio-container-desktop .chevron-up {
   z-index: 9;
   height: 20px;
+  width: 100%;
+  transition: 0.5s ease;
 }
 .main .bio-container-desktop .bio-main {
   width: 100%;
@@ -222,6 +224,10 @@ body {
 .translate-bio-up {
   transform: translateY(0) !important;
   background-color: black !important;
+}
+
+.rotate-chevron {
+  transform: rotate(0.5turn);
 }
 
 /* NAVBAR */
@@ -407,6 +413,9 @@ body {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+  }
+  .navbar-pages-desktop .li-links .color-red {
+    color: red;
   }
 }
 
