@@ -7,7 +7,10 @@
     align-items: center;
     justify-content: space-between;
     @media only screen and (min-width: 1224px){
+        width: 100%;
         justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.381);
+
     }
     .bg-lines-top{
         display: none;
@@ -111,7 +114,7 @@
 
         display: flex;
         justify-content: center;
-        gap: .5rem; 
+        gap: 1rem; 
         .li-links {
             height: 100%;
 
@@ -143,6 +146,7 @@
                 /* link sessiones */
                 transition: .1s;
                 &:hover {
+                    margin: 0 1rem;
                     z-index: 10;
                     transform: scale(1.5);
                     font-weight: 600;
@@ -291,3 +295,6 @@
     position: relative;
 }
 
+.display-none{
+    display: none;
+}
