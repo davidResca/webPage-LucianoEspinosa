@@ -9,149 +9,122 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- scripts -->
-    <script defer src="js/prensa.js"></script>
     <script defer src="js/main.js"></script>
+    <script defer src="js/seetitleinmain.js"></script>
+    <script defer src="js/showbioChevron.js"></script>
+    <script defer src="js/mutevideo.js"></script>
     <title>Luciano Espinosa - Musico</title>
 </head>
-<body>
+<body class="background-special">
     <!-- HEADER -->
-    <header class="nav">
-        <img class="bg-lines-top" src="./assets/vectores/bg-lines-mobile.svg" alt="lines">
-        <a id="header-title" class="header-title" href="index.html">luciano espinosa</a>
+    <header class="navbar-page">
+        <img class="bg-lines-top" src="../assets/vectores/bg-lines.svg" alt="lines">
+        <a id="header-title" class="header-title" href="../index.html">luciano<br>espinosa</a>
         <div class="header-btn-container">
             <a class="header-wsp-ico" target="_blank" href="https://wa.me/&#53;&#52;&#57;&#49;&#49;&#52;&#52;&#52;&#52;&#49;&#51;&#49;&#53;"><i class="fa-brands fa-whatsapp"></i></a>
             <i id="btn-burger" class="nav-btn-toggler fa-solid fa-bars"></i>
         </div>
+        <!-- Mobile menu desplegable -->
         <nav id="collapsible-menu" class="nav-collapsible-close">
-            <ul class="nav-links">
+            <ul class="nav-links index">
+                
                 <li>
                     <a class="links" href="./pages/bio.html">bio</a>
                 </li>
-                <hr class="line">
+                
                 <li>
                     <a class="links" href="./pages/gestion.html">gestión</a>
                 </li>
-                <hr class="line">
+                
                 <li>
                     <a class="links" href="./pages/prensa.html">prensa</a>
                 </li>
-                <hr class="line">
+                
                 <li>
-                    <a class="links" href="https://kilcamusic.bandcamp.com/">discos</a>
+                    <a class="links" target="_blank" href="https://kilcamusic.bandcamp.com/">discos</a>
                 </li>
-                <hr class="line">
+                
                 <li>
                     <a class="links" href="./pages/contacto.html">contacto</a>
                 </li>
-                <hr class="line">
-                <li>
-                    <a class="links" href="./pages/caras.html">2 caras</a>
-                </li>
-                <hr class="line">
-                <li>
-                    <a class="links" href="./pages/losviajes.html">los viajes</a>
-                </li>
-                <hr class="line">
-                <li>
-                    <a class="links" href="./pages/semillero.html">semillero <br> reggae para chicos</a>
-                </li>
-                <hr class="line">
-                <li>
-                    <a class="links" href="./pages/sessiones.html">sessiones reggae</a>
-                </li>
-                <hr class="line">
+                
             </ul>
             <div class="dev-sign">
                 <a target="_blank" href="https://wa.me/&#50;&#50;&#49;&#54;&#50;&#50;&#51;&#54;&#51;&#55;?text=&#104;&#111;&#108;&#97;&excl;&#32;&#113;&#117;&#105;&#101;&#114;&#111;&#32;&#109;&#105;&#32;&#112;&aacute;&#103;&#105;&#110;&#97;&#32;&#119;&#101;&#98;&excl;"><i class="fa-brands fa-whatsapp"></i></a>
                 <p>2022 web by dR</p>
                 <a target="_blank" href="https://www.linkedin.com/in/davidresca/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-        </nav>        
+        </nav>
+        <!-- Desktop menu desplegable -->
+        <ul class="navbar-pages-desktop">
+            <li class="li-links">
+                <a class="link" href="./pages/bio.html">bio</a>
+            </li>
+            <li class="li-links">
+                <a class="link" href="./pages/gestion.html" data-hover="cultural"><p class="gestion-tit">gestión</p></a>
+            </li>
+            <li class="li-links">
+                <a class="link" href="./pages/prensa.html">prensa</a>
+            </li>
+            <li class="li-links">
+                <a class="link" target="_blank" href="https://kilcamusic.bandcamp.com/">discos</a>
+            </li>
+            <li class="li-links">
+                <a class="link color-red" href="./pages/contacto.html">contacto</a>
+            </li>
+            <li class="li-links">
+                <a class="link" href="./pages/sessiones.html" data-hover="reggae instrumental"><p class="sess-tit">sessiones</p></a>
+            </li>
+            <li class="li-links">
+                <a class="link" href="./pages/caras.html" data-hover="ska/tango/fusión"><p class="caras-tit">2caras</p></a>
+            </li>
+            <li class="li-links">
+                <a class="link" href="./pages/semillero.html" data-hover="reggae para chicos"><p class="semi-tit">semillero</p></a> 
+            </li>
+            <li class="li-links">
+                <a class="link" href="./pages/losviajes.html">losviajes</a> 
+            </li>
+        </ul>
     </header>
     <!-- MAIN -->
     <main>
-        <section class="main-mobile">
-            <div class="main-menu">
-                <!-- main img -->
-                <img class="main-img" src="./assets/img/main-img.png" alt="luciano espinosa">
-                <!-- main menu links -->
-                <div class="main-links-container">
-                    <ul class="main-links">
-                        <a class="link" href="./pages/bio.html">bio</a>
-                        <a class="link" href="./pages/gestion.html">gestión cultural</a>
-                        <a class="link" target="_blank" href="https://kilcamusic.bandcamp.com/">discografía</a>
-                        <a class="link" href="./pages/prensa.html">prensa</a>
-                        <a class="link" href="./pages/contacto.html">contacto</a>
-                    </ul>
-                </div>
-            </div>  
-        </section>
         <!-- MAIN 1224px -->
-        <section class="main-desktop">
-            <a id="header-title" class="header-title" href="index.html">luciano espinosa</a>
-            <ul class="links-header-desktop">
-                <li class="li-links">
-                    <a class="link" href="./pages/bio.html">bio</a>
-                </li>
-                <li class="li-links">
-                    <a class="link" href="./pages/gestion.html" data-hover="cultural"><p class="gestion-tit">gestión</p></a>
-                </li>
-                <li class="li-links">
-                    <a class="link" href="./pages/prensa.html">prensa</a>
-                </li>
-                <li class="li-links">
-                    <a class="link" target="_blank" href="https://kilcamusic.bandcamp.com/">discos</a>
-                </li>
-                <li class="li-links">
-                    <a class="link" href="./pages/contacto.html">contacto</a>
-                </li>
-                <li class="li-links">
-                    <a class="link" href="./pages/sessiones.html" data-hover="reggae instrumental"><p class="sess-tit">sessiones</p></a>
-                </li>
-                <li class="li-links">
-                    <a class="link" href="./pages/caras.html" data-hover="ska/tango/fusión"><p class="caras-tit">2caras</p></a>
-                </li>
-                <li class="li-links">
-                    <a class="link" href="./pages/semillero.html" data-hover="reggae para chicos"><p class="semi-tit">semillero</p></a> 
-                </li>
-                <li class="li-links">
-                    <a class="link" href="./pages/losviajes.html"><p class="semi-tit">losviajes</p></a> 
-                </li>
-            </ul>
+        <section class="main">
+            <div class="sound">
+                <img id="btn-sound" src="./assets/ico/soundoff.svg" alt="">
+            </div>
+            <video id="vid" defer autoplay muted loop>
+                <source src="./assets/video/Sessionesoptim.webm" type="video/mp4">
+            </video>
+            <!-- LINKS MOBILE -->
+            <div class="main-links-container">
+                <a class="link" href="./pages/caras.html">2 caras</a>
+                <a class="link" href="./pages/losviajes.html">los viajes</a>
+                <a class="link" href="./pages/sessiones.html">sessiones</a>
+                <a class="link" href="./pages/semillero.html">semillero</a>
+                <a class="link" target="_blank" href="https://kilcamusic.bandcamp.com/">discografía</a>
+            </div>
+
+            <!-- Logo in desktop -->
+            <div class="main-title">
+                <h2>luciano espinosa</h2>
+            </div>
+            <!-- BIO DESKTOP -->
             <section id="bio" class="bio-container-desktop">
-                <!-- BIO TEXTO -->
-                <article class="description-text-container">
-                    <p class="text-paragraph">Luciano Espinosa es músico, compositor, guitarrista y gestor cultural argentino. Se dedica a la música y a la producción musical desde principio de los 90. 
-                    <span>Especializado en estilos como Reggae, Ska, Rock, Funk y Soul, ha compuesto música original para sus diversos proyectos y ha producido para otros artistas. Ha tocado con: Sessiones, Los Intocables, Rico Rodriguez, Lord Tanamo, Eugene Grey, Tributo Argentino a Bob Marley, entre otros.</span>
-                    </p>
-                </article>
-                <!-- BOTON LEER MAS -->
-                <div class="leer-mas-container">
-                    <a href="./pages/bio.html">Leer mas...</a>
-                    <img src="./assets/vectores/linea-leermas.svg" alt="leer mas">
+                <img id="main-chevron-bio" class="chevron-up" src="assets/ico/chevron-bio-up.svg" alt="">
+                <div class="bio-main">
+                    <div id="bio-description" class="bio-description">
+                        <p class="bio-text">Músico, compositor, guitarrista y gestor cultural argentino. Se dedica a la música y a la producción musical desde principios de los 90. Especializado en estilos como Reggae, Ska, Rock, Funk y Soul, ha compuesto música original para sus diversos proyectos y ha producido para otros artistas. Ha tocado con: Sessiones, Los Intocables, Rico Rodriguez, Lord Tanamo, Eugene Grey, Tributo Argentino a Bob Marley, entre otros.</p>
+                    </div>
+                    <!-- BOTON LEER MAS -->
+                    <div class="leer-mas-container">
+                        <a href="./pages/bio.html">leer mas...</a>
+                    </div>
                 </div>
             </section>
-            <div class="container-carousel">
-                <video autoplay controls muted>
-                    <source src="./assets/video/Sessiones.mp4" type="video/mp4">
-                    <source src="./assets/video/Sessiones.mp4" type="video/ogg">
-                </video>
-            </div>
-            <!-- color lines bg  -->
+            <!-- color lines background  -->
             <img class="bg-lines-top" src="./assets/vectores/bg-lines.svg" alt="lines">
         </section>
     </main>
-    <!-- FOOTER -->
-    <footer class="mobile-footer">
-        <!-- firma dev -->
-        <div class="contact-rrss-icons">
-            <div class="rrss-ico">
-                <a target="_blank" href="https://wa.me/&#53;&#52;&#57;&#49;&#49;&#52;&#52;&#52;&#52;&#49;&#51;&#49;&#53;"><i class="fa-brands fa-whatsapp"></i></a>
-                <a target="_blank" href="mailto: lucianoespinosa@hotmail.com"><i class="fa-regular fa-envelope"></i></a>
-                <a target="_blank" href="https://www.instagram.com/lucianoespinosamusic/"><i class="fa-brands fa-instagram"></i></a>
-                <a target="_blank" href="https://kilcamusic.bandcamp.com/"><i class="fa-brands fa-bandcamp"></i></i></a>
-            </div>
-        </div> 
-    </footer>
 </body>
 </html>
