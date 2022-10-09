@@ -156,6 +156,7 @@ body {
   }
 }
 .main .bio-container-desktop .chevron-up {
+  cursor: pointer;
   z-index: 9;
   height: 20px;
   width: 100%;
