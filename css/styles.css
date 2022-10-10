@@ -252,7 +252,7 @@ body {
 }
 @media only screen and (min-width: 1224px) {
   .navbar-page .bg-lines-top {
-    z-index: -1;
+    z-index: 99;
     position: absolute;
     top: 0;
     right: 0;
@@ -275,6 +275,7 @@ body {
 }
 @media only screen and (min-width: 1224px) {
   .navbar-page .header-title {
+    display: none;
     font-size: 4rem;
     line-height: 3.5rem;
   }
@@ -717,12 +718,18 @@ body {
     align-items: flex-start;
   }
 }
+.pages-main .title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: white;
+}
 @media only screen and (min-width: 1224px) {
-  .pages-main div {
-    margin-bottom: 1rem;
+  .pages-main .title {
+    font-size: 3rem;
   }
 }
-.pages-main div .marquee-container {
+.pages-main .page-title {
   z-index: 99;
   display: grid;
   grid-template-columns: 1fr;
@@ -731,21 +738,21 @@ body {
   justify-content: flex-start;
   height: 50px;
   width: 250px;
+  /* .marquee-img{
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 100%;
+      height: 100%;
+  } */
 }
 @media only screen and (min-width: 1224px) {
-  .pages-main div .marquee-container {
+  .pages-main .page-title {
     width: 375px;
     height: 90px;
     grid-template-rows: 100px;
   }
 }
-.pages-main div .marquee-container .marquee-img {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  width: 100%;
-  height: 100%;
-}
-.pages-main div .marquee-container .marquee-title-container {
+.pages-main .page-title .marquee-title-container {
   grid-row: 1/2;
   grid-column: 1/2;
   margin-left: 1rem;
@@ -754,45 +761,40 @@ body {
   text-transform: uppercase;
   color: white;
 }
-.pages-main div .marquee-container .marquee-title-container .marquee-title {
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
-@media only screen and (min-width: 1224px) {
-  .pages-main div .marquee-container .marquee-title-container .marquee-title {
-    font-size: 3rem;
-  }
-}
-.pages-main div .marquee-container .marquee-title-container .marquee-subtitle {
+.pages-main .page-title .marquee-title-container .marquee-subtitle {
   font-weight: 500;
   font-size: 1rem;
   text-align: justify;
   letter-spacing: 0.2rem;
 }
-.pages-main div .marquee-container .marquee-title-container .tit-big {
+.pages-main .page-title .marquee-title-container .tit-big {
   margin-top: 1rem;
   font-size: 1.5rem;
   line-height: 0.1rem;
 }
 @media only screen and (min-width: 1224px) {
-  .pages-main div .marquee-container .marquee-title-container .tit-big {
+  .pages-main .page-title .marquee-title-container .tit-big {
     font-size: 3rem;
     letter-spacing: 0;
     line-height: 1.4rem;
   }
 }
-.pages-main div .marquee-container .marquee-title-container .sub-big {
+.pages-main .page-title .marquee-title-container .sub-big {
   font-size: 12px;
 }
 @media only screen and (min-width: 1224px) {
-  .pages-main div .marquee-container .marquee-title-container .sub-big {
+  .pages-main .page-title .marquee-title-container .sub-big {
     font-size: 20px;
     letter-spacing: 1.8px;
   }
 }
-.pages-main div .marquee-container .marquee-title-container .title-doscaras {
+.pages-main .page-title .marquee-title-container .title-doscaras {
   top: 0.2rem !important;
+}
+@media only screen and (min-width: 1224px) {
+  .pages-main div {
+    margin-bottom: 1rem;
+  }
 }
 .pages-main .description-text-container {
   width: 330px;
@@ -1271,6 +1273,13 @@ body {
   font-size: 1.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.342);
+}
+@media only screen and (min-width: 1224px) {
+  .dev-sign {
+    flex-direction: column;
+    width: 50px;
+    height: 100%;
+  }
 }
 .dev-sign a {
   text-decoration: none;
